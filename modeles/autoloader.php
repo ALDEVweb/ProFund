@@ -21,7 +21,7 @@ class autoloader {
         // Remplacement des backslashes par des slashes et ajout de l'extension PHP
         $classPath = str_replace('\\', '/', $class) . '.php';
         // remplacement du namespace fraldev par .. pour remonter d'un dossier
-        $classPath = str_replace('fraldev', '..', $classPath);
+        $classPath = str_replace('fraldev', '', $classPath);
 
         // Chemin du fichier de classe dans le dossier modeles
         if (file_exists($classPath)) {

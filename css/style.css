@@ -3,18 +3,16 @@
     --gutter: 16px;                                                                   /* Nécessaire aux largeurs */
     --valide : green;                                                               /* Nécessaire aux formulaires */
     --nonValide : red;                                                              /* Nécessaire aux formulaires */
-    --background-loader : grey;                                                     /* Nécessaire au loader */
-    --halo-souris-color : grey;                                                     /* Nécessaire au halo autour de la souris */
-    --logo-loader : url("assets/logo/Logo-AL-developpement-web-black.png");           /* Nécessaire au loader */
-    /* si pas de dark/light mode
-    --back-color-one : black;
-    --back-color-two : white;           
-    --txt-color-one : white;
-    --txt-color-two : black; 
-    */ 
+    --background-loader : #ffd700;                                                     /* Nécessaire au loader */
+    --halo-souris-color : #ffd700;                                                     /* Nécessaire au halo autour de la souris */
+    --logo-loader : url("../assets/logo/Logo-AL-developpement-web-black.png");           /* Nécessaire au loader */
+    --back-color-one : white;
+    --back-color-two : #f5f5f5;           
+    --txt-color-one : #1a237e;
+    --txt-color-two : #2e7d32; 
 }
 
-/* Si dark_mode utilisé */
+/* Si dark_mode utilisé *//*
 [data-theme="dark"]{
     --back-color-one : black;
     --back-color-two : white;
@@ -32,15 +30,33 @@
     --logo-AL: url("../assets/logo/Logo-AL-developpement-web-black.png");
     --picto-sprite: url("../assets/picto/sprite-black.png");
     --access: url("../assets/picto/access-black.png");
-}
+}*/
 
-/* si switch access utilisé */
-[data-style="normal"]{
+/* si switch access utilisé *//*
+[data-style="normal"]{*/
     /* Déclarez ici les variables pour les différents font-family */ 
-    --access : url("../assets/picto/access-black.png");
+/*    --access : url("../assets/picto/access-black.png");
 }
-[data-style="access"]{
+[data-style="access"]{*/
     /* Remplacez ici tout les font-family par "Luciole" */
     /* Luciole existe en Bold et Regular seulement */
-    --access : url("../assets/picto/access-blue.png");
+/*    --access : url("../assets/picto/access-blue.png");
+}*/
+
+.arriere-plan {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/background_money.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+@media all and (min-width: 1025px) {
+    .arriere-plan{
+        background-image: url("../assets/background_desktop.jpg");
+    }
+}
+
+

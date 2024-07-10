@@ -36,8 +36,8 @@ function session_activation() {
     // Si un utilisateur est connecté :
     if (session_isconnected()) {
         //   - charger l'objet utilisateur connecté 
-        global $utilisateurConnecte;
-        $utilisateurConnecte = new utilisateur(session_idconnected());
+        global $userConnecte;
+        $userConnecte = new utilisateur(session_idconnected());
         //   - vérifier qu'il est actif, encore autorisé, etc....
         // ....
     }
@@ -76,8 +76,8 @@ function session_isconnected() {
     // Retour : un objet de la calsse qui gère les utilisateurs de l'appli
 
     if (session_isconnected()) {
-        global $utilisateurConnecte;
-        return $utilisateurConnecte;
+        global $userConnecte;
+        return $userConnecte;
     } else {
         return new utilisateur();
     }
@@ -101,6 +101,6 @@ function session_isconnected() {
 
     $_SESSION["id"] = $id;
     //   - charger l'objet utilisateur connecté 
-    global $utilisateurConnect;
-    $utilisateurConnect = new utilisateur(session_idconnected());
+    global $userConnecte;
+    $userConnecte = new utilisateur(session_idconnected());
  }

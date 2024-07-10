@@ -189,10 +189,10 @@ colorMode.addEventListener("change",(e)=>{
 // gestion de l'affichage ou masquage du mdp
 
 // récupération des chemins des images possibles
-let oeilOuvertBlanc = `<img src="../assets/oeil_ouvert_blanc.svg" alt="image d'un oeil"></img>`;
-let oeilFermeBlanc = `<img src="../assets/oeil_ferme_blanc.svg" alt="image d'un oeil"></img>`;
-let oeilOuvertNoir = `<img src="../assets/oeil_ouvert_noir.svg" alt="image d'un oeil"></img>`;
-let oeilFermeNoir = `<img src="../assets/oeil_ferme_noir.svg" alt="image d'un oeil"></img>`;  
+let oeilOuvertBlanc = `<img src="assets/oeil_ouvert_blanc.svg" alt="image d'un oeil"></img>`;
+let oeilFermeBlanc = `<img src="assets/oeil_ferme_blanc.svg" alt="image d'un oeil"></img>`;
+let oeilOuvertNoir = `<img src="assets/oeil_ouvert_noir.svg" alt="image d'un oeil"></img>`;
+let oeilFermeNoir = `<img src="assets/oeil_ferme_noir.svg" alt="image d'un oeil"></img>`;  
 
 // récupération des boutons toggle-pwd
 let togglePwdButtons = document.querySelectorAll(".toggle-pwd")
